@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyResto</title>
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <!--css-->
+    <style>
+      .bg-body-tertiary {
+  background-color: rgb(40, 39, 40) !important;
+}
+
+.banner{
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0),rgba(0,0,0,0.4)),url('https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/6/9/3/FNM_070115-Grilled-Steak-and-Rice-Bowl-Recipe_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1433952072522.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar h4,
+.navbar .nav-link {
+    color: white !important;
+}
+
+.icon-service{
+    width: 90px;
+    height: 90px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #f9f6f8;
+   }
+
+   .main-color{
+    background-color: #302e30;
+   }
+   .hovered-card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+    
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -25,14 +59,16 @@
           <a class="nav-link" href="#">Promo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Keranjang</a>
+          <a class="nav-link" href="#">Keranjang</a>
         </li>
       </ul>
     </div>
     </div>
   </div>
 </nav>
-<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 <!--banner buka-->
 <div class="container-fluid banner d-flex align-items-center">
   <div class="container">
@@ -46,11 +82,12 @@
     <option value="2">Traditional Food</option>
     <option value="3">Eastern Food</option>
   </select>
-  <button class="btn btn-lg btn-outline-warning text-light"type="button">Search</button>
+  <button class="btn btn-lg btn-outline-warning text-light" type="button">Search</button>
 </div>
   </div>
 </div>
 <!--banner tutup-->
+
 <!--promo-->
 <div class="container-fluid py-5">
   <div class="container">
@@ -62,21 +99,23 @@
   <div class="card-body">
     <h5 class="card-title">Sushi</h5>
     <p class="card-text">Nikmati kesegaran sushi favorit dengan harga spesial! 🍣
-Nasi lembut, ikan segar, dan rasa autentik Jepang—sekarang makin hemat. Jangan sampai kehabisan!</a></p>
+Nasi lembut, ikan segar, dan rasa autentik Jepang—sekarang makin hemat. Jangan sampai kehabisan!</p>
     <a href="#" class="btn btn-primary">Buy</a>
   </div>
 </div>
     </div>
+
     <div class="col-md-3 hovered-card">
     <div class="card h-100">
         <img src="https://awsimages.detik.net.id/community/media/visual/2022/06/01/jenis-daging-buat-steak-2_169.jpeg?w=650" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Steak</h5>
-            <p class="card-text">Potongan daging berkualitas tinggi yang dimasak dengan tingkat kematangan sempurna, menghasilkan tekstur lembut dan cita rasa steak yang kaya.</a></p>
+            <p class="card-text">Potongan daging berkualitas tinggi yang dimasak dengan tingkat kematangan sempurna, menghasilkan tekstur lembut dan cita rasa steak yang kaya.</p>
             <a href="#" class="btn btn-primary">Buy</a>
         </div>
     </div>
 </div>
+
 <div class="col-md-3 hovered-card">
     <div class="card h-100">
         <img src="https://soc-phoenix.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2018/01/10115312/5-Coffee-Shop-di-Kelapa-Gading-yang-Perlu-Dikunjungi-Pecinta-Kopi.jpg" class="card-img-top" alt="...">
@@ -90,6 +129,62 @@ Nasi lembut, ikan segar, dan rasa autentik Jepang—sekarang makin hemat. Jangan
   </div>
 </div>
 <!--promo tutup-->
+
+<!--section produk-->
+<div class="container-fluid py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Produk Terlaris</h2>
+
+    <div class="row">
+      <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3yY_dRkVEvzCoWh1wBdKej2waDo9KxzBmZA&s" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning">Ramen</h5>
+            <p class="card-text">Ramen kuah gurih dengan mie kenyal dan topping pilihan.</p>
+            <h4 class="card-text text-warning">Rp 15.000</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_sla2ek1BKJAlOj_NMszp-Ca7Khki1eayw&s" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning">Chicken Steak</h5>
+            <p class="card-text">Steak ayam empuk dengan saus spesial, disajikan hangat dengan cita rasa gurih dan lezat.</p>
+            <h4 class="card-text text-warning">Rp 30.000</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLD1jubn2yyn9LkPbgtdShI_34oeKYqWpjRQ&s" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning">Ice Coffe</h5>
+            <p class="card-text">Kopi dingin segar dengan aroma khas, pas buat nemenin santai atau habis makan berat.</p>
+            <h4 class="card-text text-warning">Rp 20.000</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgd2de9q5HWXsVhXjtPlNueb6-UNMtpot6Xw&s" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning">Dessert Cake</h5>
+            <p class="card-text">Kue lembut dengan lapisan krim manis, cocok sebagai penutup setelah menikmati hidangan utama.</p>
+            <h4 class="card-text text-warning">Rp 15.000</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--section produk tutup-->
+
 <!-- SECTION SERVICE -->
 <div class="container-fluid py-5 main-color">
   <div class="row justify-content-center">
@@ -131,5 +226,6 @@ Nasi lembut, ikan segar, dan rasa autentik Jepang—sekarang makin hemat. Jangan
 
   </div>
 </div>
-  </body>
+
+</body>
 </html>
